@@ -47,20 +47,21 @@ public void run() {
 
                     System.out.println("O Grilo_"+(indice+1)+" do time: "+Time[indice]+" pulou "+pulinho+"cm e já percorreu "+Grilo[indice]+"cm");
         
-               }if (Grilo[indice]>=tamPista){
+               }if (Grilo[indice]>=tamPista){ //verificando se o grilo chegou na reta final
+            	   
+            	   
                     
-                   if(Colocacao[indice]==0){
+                  if(Colocacao[indice]==0){
                        
                     cont +=1;
                     Colocacao[indice] = cont ;
                    }
+                  
+                  
 
                }
-    
+               if (Grilo[indice] >= Grilo.length && Grilo[indice]>= tamPista)Fim=true;
             }
-
-            if (Grilo[0]>=tamPista && Grilo[1]>=tamPista && Grilo[2]>=tamPista && Grilo[3]>=tamPista && Grilo[4]>=tamPista)Fim=true;
-           
           
         }
    

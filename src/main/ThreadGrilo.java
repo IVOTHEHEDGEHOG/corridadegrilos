@@ -9,12 +9,12 @@ public class ThreadGrilo {
 	 
 	 
 
-	 public static int MAX=1;
+	 public static int MAX;
    
    public static int[] Grilo = new int [MAX]; 
    public static int[] Pulos = new int [MAX]; 
    public static int[] Colocacao = new int[MAX];   
-   public static int tamPista= 100;
+   public static int tamPista;
    public static boolean Fim = false;
    public static int[] Time= new int[MAX];
    
@@ -26,6 +26,15 @@ public class ThreadGrilo {
 		 Ngrilos = in.nextInt();
 		 MAX = Ngrilos;
    }
+   
+   public void EntradaTamPista() {
+	   
+		 Scanner in = new Scanner(System.in);
+		    
+		 System.out.println("Informe o tamanho da pista: ");
+		 tamPista = in.nextInt();
+		
+ }
   
 public void Executar( ){
 	

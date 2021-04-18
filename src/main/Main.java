@@ -16,12 +16,12 @@ public static int[] tPulo = new int[2];
       ThreadGrilo t = new ThreadGrilo();
      
       t.EntradaGrilo();
-     
+     t.EntradaTamPista();
       t.Executar();
       
         for (int j=0; j<t.Ngrilos;j++){
                 
-            System.out.println("Grilo_"+(j+1)+" do time: "+t.Time[j]+" foi o "+t.Colocacao[j]+"ยบ colocado com "+t.Pulos[j]+" pulos");
+            System.out.println("Grilo_"+(j+1)+" do time: "+t.Time[j]+" foi o "+t.Colocacao[j]+"colocado com "+t.Pulos[j]+" pulos");
           
             if(t.Time[j]==1){
                 
