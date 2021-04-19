@@ -59,7 +59,7 @@ public void run() {
     
             }
 
-            if (Grilo[0]>=tamPista && Grilo[1]>=tamPista && Grilo[2]>=tamPista && Grilo[3]>=tamPista && Grilo[4]>=tamPista)Fim=true;
+            if (Grilo[indice] >= Grilo.length && Grilo[indice]>= tamPista)Fim=true;
            
           
         }
