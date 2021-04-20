@@ -33,9 +33,9 @@ public void run() {
 
             for(int indice=0;indice <MAX; indice++){// verifica se o indice não ultrapassa a quantidade de grilos
               
-                int sorteio = (int) (Math.random()*5);// sorteando os times
+                int sorteio = (int) (Math.random()*2);// sorteando os times
                 
-                if(Time[indice] ==0)Time[indice] = sorteio+1;// colocando o grilo no time aleatório de 1 a 5
+                if(Time[indice] ==0)Time[indice] = sorteio+1;// colocando o grilo no time aleatório de 1 a 2
                 
                 
 		if (Grilo [indice]<tamPista){ // verifica se a distancia percorrida do grilo é menor que o tamanho da pista
